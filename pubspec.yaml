@@ -1,4 +1,4 @@
-name: dynamic_form_builder
+name: dynamicFormBuilder
 description: A Flutter package for building dynamic forms from JSON data with multi-language support.
 version: 0.0.1
 homepage: https://github.com/moradchalaby/dynamic_form_builder
