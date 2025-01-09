@@ -160,3 +160,5 @@ MIT License - details can be found in the [LICENSE](LICENSE) file.
   - Form overflow issue
   - Improved form validation
   - New form elements
+- 0.0.3
+  - Added color picker support

@@ -1,9 +1,9 @@
 name: json_form_builder
 description: A Flutter package for building dynamic forms from JSON data with multi-language support.
-version: 0.0.2
+version: 0.0.3
 homepage: https://github.com/moradchalaby/json_form_builder
 repository: https://github.com/moradchalaby/json_form_builder
-publish_to: https://pub.dev 
+
 environment:
   sdk: '>=3.0.0 <4.0.0'
   flutter: ">=3.0.0"

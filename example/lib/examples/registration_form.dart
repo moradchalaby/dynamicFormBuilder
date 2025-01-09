@@ -15,7 +15,7 @@ class _RegistrationFormState extends State<RegistrationForm> {
     {
       "type": "text",
       "required": true,
-      "label": "Ad Soyad",
+      "label": "Name",
       "name": "fullname",
       "className": "form-control",
       "access": false,
@@ -35,8 +35,8 @@ class _RegistrationFormState extends State<RegistrationForm> {
       "type": "text",
       "subtype": "password",
       "required": true,
-      "label": "Şifre",
-      "description": "Şifre",
+      "label": "Password",
+      "description": "Password",
       "className": "form-control",
       "name": "password",
       "access": false
@@ -45,8 +45,8 @@ class _RegistrationFormState extends State<RegistrationForm> {
       "type": "text",
       "subtype": "color",
       "required": true,
-      "label": "Renk Seçin",
-      "description": "Tercih ettiğiniz rengi seçin",
+      "label": "Select Color",
+      "description": "Select the color you want",
       "name": "color",
       "className": "form-control",
       "access": false
@@ -72,7 +72,7 @@ class _RegistrationFormState extends State<RegistrationForm> {
           locale: Locale(lang),
           formData: formData,
           onSubmit: (values) {
-            print('Form değerleri:');
+            print('Form values:');
             values.forEach((key, value) {
               print('$key: $value');
             });

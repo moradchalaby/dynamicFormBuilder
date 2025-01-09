@@ -136,3 +136,5 @@ MIT-Lizenz - Details finden Sie in der [LICENSE](LICENSE)-Datei.
   - Formularüberlaufproblem
   - Verbesserte Formularvalidierung
   - Neue Formularelemente
+- 0.0.3
+  - Unterstützung des Farbauswahl-Elements

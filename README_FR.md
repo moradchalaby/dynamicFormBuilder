@@ -135,3 +135,5 @@ Licence MIT - les détails peuvent être trouvés dans le fichier [LICENSE](LICE
   - Problème de débordement du formulaire
   - Amélioration de la validation du formulaire
   - Nouveaux éléments de formulaire
+- 0.0.3
+  - Support du sélecteur de couleur

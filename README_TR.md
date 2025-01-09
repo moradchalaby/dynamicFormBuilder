@@ -166,3 +166,5 @@ MIT License - detaylar için [LICENSE](LICENSE) dosyasına bakın.
   - Form taşması sorunu
   - Form doğrulama iyileştirmesi
   - Yeni form elementleri
+- 0.0.3
+  - Renk seçici desteği

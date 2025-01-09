@@ -24,7 +24,7 @@ class ColorPickerElement extends StatelessWidget {
             children: [
               Expanded(
                 child: Text(
-                  field['value'] ?? 'Renk seçiniz',
+                  field['value'] ?? 'Select Color',
                   style: Theme.of(context).textTheme.bodyMedium,
                 ),
               ),
@@ -34,7 +34,7 @@ class ColorPickerElement extends StatelessWidget {
                     context: context,
                     builder: (BuildContext context) {
                       return AlertDialog(
-                        title: Text(field['label'] ?? 'Renk Seç'),
+                        title: Text(field['label'] ?? 'Select Color'),
                         content: SingleChildScrollView(
                           child: ColorPicker(
                             borderColor: Color(int.parse(
