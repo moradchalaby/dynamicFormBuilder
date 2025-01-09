@@ -1,26 +1,26 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'localization/app_localizations.dart';
-import 'widgets/form_elements/text_field_element.dart';
-import 'widgets/form_elements/select_element.dart';
-import 'widgets/form_elements/checkbox_group_element.dart';
-import 'widgets/form_elements/radio_group_element.dart';
-import 'widgets/form_elements/date_picker_element.dart';
-import 'widgets/form_elements/file_upload_element.dart';
-import 'widgets/form_elements/number_input_element.dart';
-import 'widgets/form_elements/textarea_element.dart';
-import 'widgets/form_elements/autocomplete_element.dart';
-import 'widgets/form_elements/button_element.dart';
-import 'widgets/form_elements/header_element.dart';
-import 'widgets/form_elements/hidden_element.dart';
-import 'widgets/form_elements/paragraph_element.dart';
+import 'src/localization/app_localizations.dart';
+import 'src/widgets/form_elements/text_field_element.dart';
+import 'src/widgets/form_elements/select_element.dart';
+import 'src/widgets/form_elements/checkbox_group_element.dart';
+import 'src/widgets/form_elements/radio_group_element.dart';
+import 'src/widgets/form_elements/date_picker_element.dart';
+import 'src/widgets/form_elements/file_upload_element.dart';
+import 'src/widgets/form_elements/number_input_element.dart';
+import 'src/widgets/form_elements/textarea_element.dart';
+import 'src/widgets/form_elements/autocomplete_element.dart';
+import 'src/widgets/form_elements/button_element.dart';
+import 'src/widgets/form_elements/header_element.dart';
+import 'src/widgets/form_elements/hidden_element.dart';
+import 'src/widgets/form_elements/paragraph_element.dart';
 
-class json_form_builder extends StatefulWidget {
+class JsonFormBuilder extends StatefulWidget {
   final List<Map<String, dynamic>> formData;
   final Function(Map<String, dynamic>) onSubmit;
   final Locale locale;
 
-  const json_form_builder({
+  const JsonFormBuilder({
     super.key,
     required this.formData,
     required this.onSubmit,
@@ -28,10 +28,10 @@ class json_form_builder extends StatefulWidget {
   });
 
   @override
-  State<json_form_builder> createState() => _json_form_builderState();
+  State<JsonFormBuilder> createState() => _JsonFormBuilderState();
 }
 
-class _json_form_builderState extends State<json_form_builder> {
+class _JsonFormBuilderState extends State<JsonFormBuilder> {
   final _formKey = GlobalKey<FormState>();
   final Map<String, dynamic> _formValues = {};
 

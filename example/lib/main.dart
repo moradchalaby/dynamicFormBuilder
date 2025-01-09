@@ -1,6 +1,6 @@
+import 'package:json_form_builder/form_builder.dart';
 import 'package:json_form_builder_example/examples/registration_form.dart';
 import 'package:flutter/material.dart';
-import 'package:json_form_builder/json_form_builder.dart';
 
 void main() {
   runApp(const MyApp());
@@ -204,7 +204,7 @@ class MyHomePage extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(16.0),
-        child: json_form_builder(
+        child: JsonFormBuilder(
           formData: formData[0], // formData'nın ilk elemanını kullan
           onSubmit: (values) {
             // Form değerlerini göster

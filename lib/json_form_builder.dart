@@ -1,6 +1,6 @@
 library json_form_builder;
 
-export 'src/form_builder.dart';
+export 'form_builder.dart';
 export 'src/widgets/form_elements/text_field_element.dart';
 export 'src/widgets/form_elements/select_element.dart';
 export 'src/widgets/form_elements/checkbox_group_element.dart';

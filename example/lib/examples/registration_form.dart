@@ -1,7 +1,16 @@
-import 'package:json_form_builder/src/form_builder.dart';
 import 'package:flutter/material.dart';
+import 'package:json_form_builder/form_builder.dart';
 
-class RegistrationForm extends StatelessWidget {
+class RegistrationForm extends StatefulWidget {
+  const RegistrationForm({super.key});
+
+  @override
+  State<RegistrationForm> createState() => _RegistrationFormState();
+}
+
+class _RegistrationFormState extends State<RegistrationForm> {
+  String lang = 'en'; // Varsayılan dil
+
   final formData = [
     {
       "type": "text",
@@ -17,7 +26,7 @@ class RegistrationForm extends StatelessWidget {
       "subtype": "email",
       "required": true,
       "label": "Email",
-      "description": "asdfsdf",
+      "description": "Email",
       "className": "form-control",
       "name": "email",
       "access": false
@@ -27,7 +36,7 @@ class RegistrationForm extends StatelessWidget {
       "subtype": "password",
       "required": true,
       "label": "Şifre",
-      "description": "asdfsdf",
+      "description": "Şifre",
       "className": "form-control",
       "name": "password",
       "access": false
@@ -43,34 +52,73 @@ class RegistrationForm extends StatelessWidget {
       "access": false
     }
   ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Register Form Builder'),
+        title: const Text('Register Form Builder'),
         centerTitle: true,
         backgroundColor: Colors.blue,
         actions: [
           IconButton(
-            icon: Icon(Icons.save),
-            onPressed: () {
-              Navigator.pop(context);
-            },
-          ),
+            icon: const Icon(Icons.language),
+            onPressed: () => _showLanguageDialog(),
+          )
         ],
       ),
       body: SingleChildScrollView(
-        child: json_form_builder(
-            locale: const Locale('ru'),
-            formData: formData, // formData'nın ilk elemanını kullan
-            onSubmit: (values) {
-              // Form değerlerini göster
-              print('Form değerleri:');
-              values.forEach((key, value) {
-                print('$key: $value');
-              });
-            }) as Widget,
+        child: JsonFormBuilder(
+          locale: Locale(lang),
+          formData: formData,
+          onSubmit: (values) {
+            print('Form değerleri:');
+            values.forEach((key, value) {
+              print('$key: $value');
+            });
+          },
+        ) as Widget,
       ),
+    );
+  }
+
+  void _showLanguageDialog() {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: const Text('Select Language'),
+          content: SingleChildScrollView(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                _buildLanguageListTile('Türkçe', 'tr'),
+                _buildLanguageListTile('English', 'en'),
+                _buildLanguageListTile('Русский', 'ru'),
+                _buildLanguageListTile('Français', 'fr'),
+                _buildLanguageListTile('Italiano', 'it'),
+                _buildLanguageListTile('Azərbaycan', 'az'),
+                _buildLanguageListTile('Português', 'pt'),
+                _buildLanguageListTile('العربية', 'ar'),
+                _buildLanguageListTile('Deutsch', 'de'),
+              ],
+            ),
+          ),
+        );
+      },
+    );
+  }
+
+  Widget _buildLanguageListTile(String title, String langCode) {
+    return ListTile(
+      title: Text(title),
+      selected: lang == langCode,
+      onTap: () {
+        setState(() {
+          lang = langCode;
+        });
+        Navigator.pop(context);
+      },
     );
   }
 }
