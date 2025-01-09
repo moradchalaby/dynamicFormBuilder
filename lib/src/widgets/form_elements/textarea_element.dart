@@ -1,4 +1,4 @@
-import 'package:dynamic_form_builder/src/localization/app_localizations.dart';
+import 'package:json_form_builder/src/localization/app_localizations.dart';
 import 'package:flutter/material.dart';
 
 class FormTextAreaElement extends StatelessWidget {
@@ -35,4 +35,4 @@ class FormTextAreaElement extends StatelessWidget {
       ),
     );
   }
-} 
+}

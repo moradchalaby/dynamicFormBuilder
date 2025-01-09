@@ -1,4 +1,4 @@
-# dynamic_form_builder_example
+# json_form_builder_example
 
 A new Flutter project.
 

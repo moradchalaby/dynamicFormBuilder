@@ -37,13 +37,13 @@ Bu paket, [jQuery formBuilder](https://formbuilder.online/) ile oluşturulan for
 
 ```yaml
 dependencies:
-  dynamic_form_builder: ^0.0.1
+  json_form_builder: ^0.0.1
 ```
 
 2. Paketi import edin:
 
 ```dart
-import 'package:dynamic_form_builder/dynamic_form_builder.dart';
+import 'package:json_form_builder/json_form_builder.dart';
 ```
 
 ## Kullanım
@@ -70,7 +70,7 @@ final formData = [
 ];
 
 // Form widget'ı
-DynamicFormBuilder(
+json_form_builder(
   formData: formData,
   locale: const Locale('tr'),//tr, en(default), ru, fr, it, az, ar, pt
   onSubmit: (values) {
@@ -86,7 +86,7 @@ Daha fazla örnek için [example](./example) klasörüne bakabilirsiniz.
 Form görünümünü özelleştirmek için tema parametresini kullanabilirsiniz:
 
 ```dart
-DynamicFormBuilder(
+json_form_builder(
   formData: formData,
   locale: const Locale('tr'),
   theme: FormBuilderTheme(
@@ -151,7 +151,7 @@ MIT License - detaylar için [LICENSE](LICENSE) dosyasına bakın.
 
 ### İletişim
 
-- GitHub Issues: [Issues](https://github.com/yourusername/dynamic_form_builder/issues)
+- GitHub Issues: [Issues](https://github.com/yourusername/json_form_builder/issues)
 - E-posta: your.email@example.com
 
 ### Sürüm Geçmişi

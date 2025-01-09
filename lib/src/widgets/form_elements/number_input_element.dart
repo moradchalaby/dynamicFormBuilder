@@ -1,4 +1,4 @@
-import 'package:dynamic_form_builder/src/localization/app_localizations.dart';
+import 'package:json_form_builder/src/localization/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -29,7 +29,8 @@ class FormNumberInputElement extends StatelessWidget {
         ],
         onChanged: onChanged,
         validator: (value) {
-          if (fieldData['required'] == true && (value == null || value.isEmpty)) {
+          if (fieldData['required'] == true &&
+              (value == null || value.isEmpty)) {
             return 'Bu alan zorunludur';
           }
           if (value != null && value.isNotEmpty) {
@@ -48,4 +49,4 @@ class FormNumberInputElement extends StatelessWidget {
       ),
     );
   }
-} 
+}

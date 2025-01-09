@@ -33,13 +33,13 @@ This package allows you to use form templates created with [jQuery formBuilder](
 
 ```yaml
 dependencies:
-  dynamic_form_builder: ^0.0.1
+  json_form_builder: ^0.0.1
 ```
 
 2. Import the package:
 
 ```dart
-import 'package:dynamic_form_builder/dynamic_form_builder.dart';
+import 'package:json_form_builder/json_form_builder.dart';
 ```
 
 ## Usage
@@ -66,7 +66,7 @@ final formData = [
 ];
 
 // Form widget
-DynamicFormBuilder(
+json_form_builder(
   formData: formData,
   locale: const Locale('tr'),//tr, en(default), ru, fr, it, az, ar, pt
   onSubmit: (values) {
@@ -82,7 +82,7 @@ For more examples, check the [example](./example) directory.
 You can use the theme parameter to customize the form appearance:
 
 ```dart
-DynamicFormBuilder(
+json_form_builder(
   formData: formData,
   locale: const Locale('tr'),//tr, en(default), ru, fr, it, az, ar, pt
   theme: FormBuilderTheme(
@@ -145,7 +145,7 @@ MIT License - details can be found in the [LICENSE](LICENSE) file.
 
 ### Contact
 
-- GitHub Issues: [Issues](https://github.com/moradchalaby/dynamic_form_builder/issues)
+- GitHub Issues: [Issues](https://github.com/moradchalaby/json_form_builder/issues)
 - Email: mrdcelebi@gmail.com
 
 ### Version History

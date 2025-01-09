@@ -15,12 +15,12 @@ import 'widgets/form_elements/header_element.dart';
 import 'widgets/form_elements/hidden_element.dart';
 import 'widgets/form_elements/paragraph_element.dart';
 
-class DynamicFormBuilder extends StatefulWidget {
+class json_form_builder extends StatefulWidget {
   final List<Map<String, dynamic>> formData;
   final Function(Map<String, dynamic>) onSubmit;
   final Locale locale;
 
-  const DynamicFormBuilder({
+  const json_form_builder({
     super.key,
     required this.formData,
     required this.onSubmit,
@@ -28,10 +28,10 @@ class DynamicFormBuilder extends StatefulWidget {
   });
 
   @override
-  State<DynamicFormBuilder> createState() => _DynamicFormBuilderState();
+  State<json_form_builder> createState() => _json_form_builderState();
 }
 
-class _DynamicFormBuilderState extends State<DynamicFormBuilder> {
+class _json_form_builderState extends State<json_form_builder> {
   final _formKey = GlobalKey<FormState>();
   final Map<String, dynamic> _formValues = {};
 

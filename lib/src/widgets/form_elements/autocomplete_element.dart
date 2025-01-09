@@ -1,4 +1,4 @@
-import 'package:dynamic_form_builder/src/localization/app_localizations.dart';
+import 'package:json_form_builder/src/localization/app_localizations.dart';
 import 'package:flutter/material.dart';
 
 class FormAutocompleteElement extends StatelessWidget {
@@ -13,9 +13,9 @@ class FormAutocompleteElement extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final List<Map<String, dynamic>> values = 
+    final List<Map<String, dynamic>> values =
         List<Map<String, dynamic>>.from(fieldData['values']);
-    
+
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Autocomplete<String>(
@@ -37,7 +37,8 @@ class FormAutocompleteElement extends StatelessWidget {
           )['value'];
           onChanged(selectedValue);
         },
-        fieldViewBuilder: (context, textEditingController, focusNode, onFieldSubmitted) {
+        fieldViewBuilder:
+            (context, textEditingController, focusNode, onFieldSubmitted) {
           return TextFormField(
             controller: textEditingController,
             focusNode: focusNode,
@@ -58,4 +59,4 @@ class FormAutocompleteElement extends StatelessWidget {
       ),
     );
   }
-} 
+}

@@ -1,4 +1,4 @@
-import 'package:dynamic_form_builder/src/localization/app_localizations.dart';
+import 'package:json_form_builder/src/localization/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 

@@ -12,13 +12,13 @@ Dieses Paket ermöglicht es Ihnen, mit [jQuery formBuilder](https://formbuilder.
 
 ```yaml
 dependencies:
-  dynamic_form_builder: ^0.0.1
+  json_form_builder: ^0.0.1
 ```
 
 2. Importieren Sie das Paket:
 
 ```dart
-import 'package:dynamic_form_builder/dynamic_form_builder.dart';
+import 'package:json_form_builder/json_form_builder.dart';
 ```
 
 ## Verwendung
@@ -45,7 +45,7 @@ final formData = [
 ];
 
 // Formular-Widget
-DynamicFormBuilder(
+json_form_builder(
   formData: formData,
   locale: const Locale('de'),
   onSubmit: (values) {
@@ -61,7 +61,7 @@ Weitere Beispiele finden Sie im [Beispiel](./example)-Verzeichnis.
 Sie können den Theme-Parameter verwenden, um das Erscheinungsbild des Formulars anzupassen:
 
 ```dart
-DynamicFormBuilder(
+json_form_builder(
   formData: formData,
   locale: const Locale('de'),
   theme: FormBuilderTheme(

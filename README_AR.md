@@ -12,13 +12,13 @@
 
 ```yaml
 dependencies:
-  dynamic_form_builder: ^0.0.1
+  json_form_builder: ^0.0.1
 ```
 
 2. قم باستيراد الحزمة:
 
 ```dart
-import 'package:dynamic_form_builder/dynamic_form_builder.dart';
+import 'package:json_form_builder/json_form_builder.dart';
 ```
 
 ## الاستخدام
@@ -45,7 +45,7 @@ final formData = [
 ];
 
 // النموذج
-DynamicFormBuilder(
+json_form_builder(
   formData: formData,
   onSubmit: (values) {
     print(values); // طباعة قيم النموذج
@@ -60,7 +60,7 @@ DynamicFormBuilder(
 يمكنك استخدام معلمة النسق لتخصيص مظهر النموذج:
 
 ```dart
-DynamicFormBuilder(
+json_form_builder(
   formData: formData,
   locale: const Locale('ar'),//ar, en(default), tr, ru, fr, it, az, pt
   theme: FormBuilderTheme(

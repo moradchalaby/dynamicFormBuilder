@@ -1,4 +1,4 @@
-import 'package:dynamic_form_builder/src/localization/app_localizations.dart';
+import 'package:json_form_builder/src/localization/app_localizations.dart';
 import 'package:flutter/material.dart';
 
 class FormSelectElement extends StatelessWidget {
@@ -13,7 +13,7 @@ class FormSelectElement extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final List<Map<String, dynamic>> values = 
+    final List<Map<String, dynamic>> values =
         List<Map<String, dynamic>>.from(fieldData['values']);
 
     return Padding(
@@ -41,4 +41,4 @@ class FormSelectElement extends StatelessWidget {
       ),
     );
   }
-} 
+}

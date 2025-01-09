@@ -1,7 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
-  group('DynamicFormBuilder Tests', () {
+  group('json_form_builder Tests', () {
     testWidgets('renders all form elements', (tester) async {
       // Test implementation
     });
@@ -14,4 +14,4 @@ void main() {
       // Test implementation
     });
   });
-} 
+}

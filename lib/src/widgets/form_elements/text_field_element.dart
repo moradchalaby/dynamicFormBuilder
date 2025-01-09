@@ -1,5 +1,5 @@
-import 'package:dynamic_form_builder/src/localization/app_localizations.dart';
-import 'package:dynamic_form_builder/src/widgets/form_elements/color_picker_element.dart';
+import 'package:json_form_builder/src/localization/app_localizations.dart';
+import 'package:json_form_builder/src/widgets/form_elements/color_picker_element.dart';
 import 'package:flutter/material.dart';
 
 class TextFieldElement extends StatelessWidget {
@@ -32,7 +32,6 @@ class TextFieldElement extends StatelessWidget {
       validator: (value) {
         if (field['required'] == true && (value == null || value.isEmpty)) {
           return AppLocalizations.of(context).fieldRequired;
-
         }
         return null;
       },

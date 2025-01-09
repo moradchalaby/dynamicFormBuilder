@@ -1,4 +1,4 @@
-import 'package:dynamic_form_builder/src/form_builder.dart';
+import 'package:json_form_builder/src/form_builder.dart';
 import 'package:flutter/material.dart';
 
 class RegistrationForm extends StatelessWidget {
@@ -60,8 +60,8 @@ class RegistrationForm extends StatelessWidget {
         ],
       ),
       body: SingleChildScrollView(
-        child: DynamicFormBuilder(
-          locale: const Locale('ru'),
+        child: json_form_builder(
+            locale: const Locale('ru'),
             formData: formData, // formData'nın ilk elemanını kullan
             onSubmit: (values) {
               // Form değerlerini göster

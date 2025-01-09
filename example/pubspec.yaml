@@ -1,5 +1,5 @@
-name: dynamic_form_builder_example
-description: Example app for dynamic_form_builder package
+name: json_form_builder_example
+description: Example app for json_form_builder package
 publish_to: 'none'
 
 environment:
@@ -8,7 +8,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  dynamic_form_builder:
+  json_form_builder:
     path: ../
   flex_color_picker: ^3.7.0
 

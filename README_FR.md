@@ -12,13 +12,13 @@ Ce package vous permet d'utiliser des modèles de formulaires créés avec [jQue
 
 ```yaml
 dependencies:
-  dynamic_form_builder: ^0.0.1
+  json_form_builder: ^0.0.1
 ```
 
 2. Importez le package :
 
 ```dart
-import 'package:dynamic_form_builder/dynamic_form_builder.dart';
+import 'package:json_form_builder/json_form_builder.dart';
 ```
 
 ## Utilisation
@@ -45,7 +45,7 @@ final formData = [
 ];
 
 // Widget de formulaire
-DynamicFormBuilder(
+json_form_builder(
   formData: formData,
   locale: const Locale('fr'),//fr, en(default), tr, ru, it, az, ar, pt
   onSubmit: (values) {
@@ -61,7 +61,7 @@ Pour plus d'exemples, consultez le répertoire [exemple](./example).
 Vous pouvez utiliser le paramètre de thème pour personnaliser l'apparence du formulaire :
 
 ```dart
-DynamicFormBuilder(
+json_form_builder(
   formData: formData,
   locale: const Locale('fr'),
   theme: FormBuilderTheme(

@@ -1,6 +1,6 @@
 {
-    "name": "dynamic_form_builder_example",
-    "short_name": "dynamic_form_builder_example",
+    "name": "json_form_builder_example",
+    "short_name": "json_form_builder_example",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

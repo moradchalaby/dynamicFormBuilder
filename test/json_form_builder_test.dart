@@ -1,6 +1,5 @@
-import 'package:dynamic_form_builder/src/formbuilder.dart';
+import 'package:json_form_builder/src/formbuilder.dart';
 import 'package:flutter_test/flutter_test.dart';
-
 
 void main() {
   test('adds one to input values', () {

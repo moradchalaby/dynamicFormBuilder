@@ -1,4 +1,4 @@
-library dynamic_form_builder;
+library json_form_builder;
 
 export 'src/form_builder.dart';
 export 'src/widgets/form_elements/text_field_element.dart';

@@ -1,4 +1,4 @@
-import 'package:dynamic_form_builder/src/localization/app_localizations.dart';
+import 'package:json_form_builder/src/localization/app_localizations.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:path/path.dart';
 
@@ -6,7 +6,8 @@ class FormValidators {
   static String? Function(String?) email() {
     return (value) {
       if (value == null || value.isEmpty) return null;
-      if (!value.contains('@')) return AppLocalizations.of(context as BuildContext).fieldInvalidEmail;
+      if (!value.contains('@'))
+        return AppLocalizations.of(context as BuildContext).fieldInvalidEmail;
       return null;
     };
   }
@@ -43,7 +44,8 @@ class FormValidators {
 
   static String? Function(String?) required() {
     return (value) {
-      if (value == null || value.isEmpty) return AppLocalizations.of(context as BuildContext).fieldRequired;
+      if (value == null || value.isEmpty)
+        return AppLocalizations.of(context as BuildContext).fieldRequired;
       return null;
     };
   }
@@ -67,5 +69,4 @@ class FormValidators {
       return null;
     };
   }
-
-} 
+}
