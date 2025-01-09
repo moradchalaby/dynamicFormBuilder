@@ -12,7 +12,7 @@ Ce package vous permet d'utiliser des modèles de formulaires créés avec [jQue
 
 ```yaml
 dependencies:
-  json_form_builder: ^0.0.1
+  json_form_builder: ^0.0.2
 ```
 
 2. Importez le package :
@@ -130,3 +130,8 @@ Licence MIT - les détails peuvent être trouvés dans le fichier [LICENSE](LICE
   - Support des éléments de formulaire de base
   - Validation de formulaire
   - Personnalisation du thème
+- 0.0.2
+  - Support des langues multiples
+  - Problème de débordement du formulaire
+  - Amélioration de la validation du formulaire
+  - Nouveaux éléments de formulaire

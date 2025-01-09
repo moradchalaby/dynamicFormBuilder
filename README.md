@@ -33,7 +33,7 @@ This package allows you to use form templates created with [jQuery formBuilder](
 
 ```yaml
 dependencies:
-  json_form_builder: ^0.0.1
+  json_form_builder: ^0.0.2
 ```
 
 2. Import the package:
@@ -155,3 +155,8 @@ MIT License - details can be found in the [LICENSE](LICENSE) file.
   - Basic form elements support
   - Form validation
   - Theme customization
+- 0.0.2
+  - Multi-language support
+  - Form overflow issue
+  - Improved form validation
+  - New form elements

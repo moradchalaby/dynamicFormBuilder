@@ -37,7 +37,7 @@ Bu paket, [jQuery formBuilder](https://formbuilder.online/) ile oluşturulan for
 
 ```yaml
 dependencies:
-  json_form_builder: ^0.0.1
+  json_form_builder: ^0.0.2
 ```
 
 2. Paketi import edin:
@@ -161,3 +161,8 @@ MIT License - detaylar için [LICENSE](LICENSE) dosyasına bakın.
   - Temel form elementleri desteği
   - Form validasyonu
   - Tema özelleştirme
+- 0.0.2
+  - Çok dilli destek
+  - Form taşması sorunu
+  - Form doğrulama iyileştirmesi
+  - Yeni form elementleri

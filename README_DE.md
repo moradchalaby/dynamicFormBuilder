@@ -12,7 +12,7 @@ Dieses Paket ermöglicht es Ihnen, mit [jQuery formBuilder](https://formbuilder.
 
 ```yaml
 dependencies:
-  json_form_builder: ^0.0.1
+  json_form_builder: ^0.0.2
 ```
 
 2. Importieren Sie das Paket:
@@ -131,3 +131,8 @@ MIT-Lizenz - Details finden Sie in der [LICENSE](LICENSE)-Datei.
   - Unterstützung grundlegender Formularelemente
   - Formularvalidierung
   - Theme-Anpassung
+- 0.0.2
+  - Mehrsprachige Unterstützung
+  - Formularüberlaufproblem
+  - Verbesserte Formularvalidierung
+  - Neue Formularelemente
